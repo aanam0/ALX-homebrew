@@ -1,1 +1,622 @@
-Hello, World!
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Alex",
+				"abbreviation": "ALX",
+				"full": "Alex",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1605897460,
+		"dateLastModified": 1605897460
+	},
+	"monster": [
+		{
+			"name": "Iymrith",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Alex",
+			"page": 241,
+			"size": "G",
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "50d20 + 400",
+				"average": 925
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 29,
+			"dex": 10,
+			"con": 27,
+			"int": 18,
+			"wis": 17,
+			"cha": 21,
+			"save": {
+				"dex": "+7",
+				"con": "+15",
+				"wis": "+10",
+				"cha": "+12"
+			},
+			"skill": {
+				"perception": "+17",
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 27,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Giant",
+				"Terran"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Iymrith's innate spellcasting ability is Charisma (spell save {@dc 20}). Iymrith's stone shape can create a living gargoyle instead of altering the stone as described in the spell description. She can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"3": [
+							"{@spell counterspell}",
+							"{@spell detect magic}",
+							"{@spell ice storm}",
+							"{@spell shield|PHB}",
+							"{@spell stone shape}",
+							"{@spell teleport}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Iymrith fails a saving throw, she can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Iymrith can use her Frightful Presence. She then makes three attacks: one with her bite and two with her claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}20 ({@damage 2d10 + 9}) piercing damage plus 11 ({@damage 2d10}) lightning damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d6 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}18 ({@damage 2d8 + 9}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of Iymrith's choice that is within 120 feet of Iymrith and aware of it must succeed on a {@dc 20} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Iymrith's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"Iymrith exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a {@dc 23} Dexterity saving throw, taking 88 ({@damage 16d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Iymrith magically polymorphs into a female {@creature storm giant} or back into her true form. She reverts to her true form if she dies. Any equipment she is wearing or carrying is absorbed or borne by the new form (Iymrith's choice).",
+						"In storm giant form, Iymrith retains her alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Her statistics are otherwise replaced by those of the new form."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"Iymrith makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"Iymrith makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"Iymrith beats her wings. Each creature within 15 ft. of Iymrith must succeed on a {@dc 24} Dexterity saving throw or take 16 ({@damage 2d6 + 9}) bludgeoning damage and be knocked {@condition prone}. Iymrith can then fly up to half her flying speed."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Blue Dragon",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Iymrith",
+				"source": "SKT",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Vain and territorial, blue dragons soar through the skies over deserts, preying on caravans and plundering herds and settlements in the verdant lands beyond the desert's reach. These dragons can also be found in dry steppes, searing badlands, and rocky coasts. They guard their territories against all potential competitors, especially brass dragons.",
+											"A blue dragon is recognized by its dramatic frilled ears and the massive ridged horn atop its blunt head. Rows of spikes extend back from its nostrils to line its brow, and cluster on its jutting lower jaw.",
+											"A blue dragon's scales vary in color from an iridescent azure to a deep indigo, polished to a glossy finish by the desert sands. As the dragon ages, its scales become thicker and harder, and its hide hums and crackles with static electricity. These effects intensify when the dragon is angry or about to attack, giving off an odor of ozone and dusty air.",
+											{
+												"name": "Vain and Deadly",
+												"type": "entries",
+												"entries": [
+													"A blue dragon will not stand for any remark or insinuation that it is weak or inferior, taking great pleasure in lording its power over humanoids and other lesser creatures.",
+													"A blue dragon is a patient and methodical combatant. When fighting on its own terms, it turns combat into an extended affair of hours or even days, attacking from a distance with volleys of lightning, then flying well out of harm's reach as it waits to attack again."
+												]
+											},
+											{
+												"name": "Desert Predators",
+												"type": "entries",
+												"entries": [
+													"Though they sometimes eat cacti and other desert plants to sate their great hunger, blue dragons are carnivores. They prefer to dine on herd animals, cooking those creatures with their lightning breath before gorging themselves. Their dining habits make blue dragons an enormous threat to desert caravans and nomadic tribes, which become convenient collections of food and treasure to a dragon's eye.",
+													"When it hunts, a blue dragon buries itself in the desert sand so that only the horn on its nose pokes above the surface, appearing to be an outcropping of stone. When prey draws near, the dragon rises up, sand pouring from its wings like an avalanche as it attacks."
+												]
+											},
+											{
+												"name": "Overlords and Minions",
+												"type": "entries",
+												"entries": [
+													"Blue dragons covet valuable and talented creatures whose service reinforces their sense of superiority. Bards, sages, artists, wizards, and assassins can become valuable agents for a blue dragon, which rewards loyal service handsomely.",
+													"A blue dragon keeps its lair secret and well protected, and even its most trusted servants are rarely allowed within. It encourages ankhegs, giant scorpions, and other creatures of the desert to dwell near its lair for additional security. Older blue dragons sometimes attract air elementals and other creatures to serve them."
+												]
+											},
+											{
+												"name": "Hoarders of Gems",
+												"type": "entries",
+												"entries": [
+													"Though blue dragons collect anything that looks valuable, they are especially fond of gems. Considering blue to be the most noble and beautiful of colors, they covet sapphires, favoring jewelery and magic items adorned with those gems.",
+													"A blue dragon buries its most valuable treasures deep in the sand, while scattering a few less valuable trinkets in plainer sight over hidden sinkholes to punish and eliminate would-be thieves."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Blue Dragon's Lair",
+										"entries": [
+											"Blue dragons make their lairs in barren places, using their lightning breath and their burrowing ability to carve out crystallized caverns and tunnels beneath the sands.",
+											"Thunderstorms rage around a legendary blue dragon's lair, and narrow tubes lined with glassy sand ventilate the lair, all the while avoiding the deadly sinkholes that",
+											"are the dragon's first line of defense.",
+											"A blue dragon will collapse the caverns that make up its lair if that lair is invaded. The dragon then burrows",
+											"out, leaving its attackers to be crushed and suffocated.",
+											"When it returns later, it collects its possessions-along with the wealth of the dead intruders."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Dragons",
+										"entries": [
+											"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
+											"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
+											"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
+											"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
+											"Dragon Age Categories",
+											{
+												"type": "table",
+												"colLabels": [
+													"Category",
+													"Size",
+													"Age Range"
+												],
+												"colStyles": [
+													"col-4",
+													"col-4",
+													"col-4"
+												],
+												"rows": [
+													[
+														"Wyrmling",
+														"Medium",
+														"5 years or less"
+													],
+													[
+														"Young",
+														"Large",
+														"6–100 years"
+													],
+													[
+														"Adult",
+														"Huge",
+														"101–800 years"
+													],
+													[
+														"Ancient",
+														"Gargantuan",
+														"801 years or more"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Chromatic Dragons",
+										"entries": [
+											"The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.",
+											{
+												"name": "Driven by Greed",
+												"entries": [
+													"Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have \"stolen\" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Creatures of Ego",
+												"type": "entries",
+												"entries": [
+													"Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect."
+												]
+											},
+											{
+												"name": "Dangerous Lairs",
+												"type": "entries",
+												"entries": [
+													"A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.",
+													"Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures."
+												]
+											},
+											{
+												"name": "Queen of Evil Dragons",
+												"type": "entries",
+												"entries": [
+													"Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.",
+													"Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.",
+													"Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"Part of the ceiling collapses above one creature that the dragon can see within 120 feet of it. The creature must succeed on a DC 15 Dexterity saving throw or take 10 ({@dice 3d6}) bludgeoning damage and be knocked {@condition prone} and buried. The buried target is {@condition restrained} and unable to breathe or stand up. A creature can take an action to make a DC 10 Strength check, ending the buried state on a success.",
+											"A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a DC 15 Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+											"Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 10 ({@dice 3d6}) lightning damage."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing a legendary blue dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Thunderstorms rage within 6 miles of the lair.",
+											"Dust devils scour the land within 6 miles of the lair. A dust devil has the statistics of an air elemental, but it can't fly, has a speed of 50 feet, and has an Intelligence and Charisma of 1 (-5).",
+											"Hidden sinkholes form in and around the dragon's lair. A sinkhole can be spotted from a safe distance with a successful DC 20 Wisdom (Perception) check. Otherwise, the first creature to step on the thin crust covering the sinkhole must succeed on a DC 15 Dexterity saving throw or fall {@dice 1d6 × 10} feet into the sinkhole."
+										]
+									},
+									"If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within {@dice 1d10} days. Any sinkholes remain where they are."
+								]
+							}
+						]
+					}
+				]
+			},
+			"dragonCastingColor": "U",
+			"tokenUrl": "https://5e.tools/img/SKT/Iymrith.png?v=1.103.2",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"GI",
+				"T"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"blinded",
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Chief Guh",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "Alex",
+			"page": 140,
+			"size": "H",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 9,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 80",
+				"average": 210
+			},
+			"speed": {
+				"walk": {
+					"number": 0,
+					"condition": "80ft pushed"
+				}
+			},
+			"str": 22,
+			"dex": 1,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"save": {
+				"wis": "+2",
+				"int": "+0"
+			},
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Giant",
+				"Goblin"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the Chief Guh fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Immobile",
+					"entries": [
+						"Chief Guh cannot move, but can be pushed 80ft in her wagon by a pair of hill giants"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two greatclub attacks or two unarmed attacks."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}24 ({@damage 4d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 60/240 ft., one target. {@h}28 ({@damage 4d10 + 6}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Chief Guh",
+				"source": "SKT",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Hill giants are selfish, dimwitted brutes that hunt, forage, and raid in constant search of food. They blunder through hills and forests devouring what they can,bullying smaller creatures into feeding them. Their laziness and dullness would long ago have spelled their end if not for their formidable size and strength.",
+											{
+												"name": "Primitive",
+												"type": "entries",
+												"entries": [
+													"Hill giants dwell in hills and mountain valleys across the world, congregating in steadings built of rough timber or in clusters of well-defended mud.and-wattle huts. Their skins are tan from lives spent lumbering up and down the hilly slopes and dozing beneath the sun. Their weapons are uprooted trees and rocks pulled from the earth. The sweat of their bodies adds to the reek of the crude animal skins they wear, poorly stitched together with hair and leather thongs."
+												]
+											},
+											{
+												"name": "Bigger Means Better",
+												"type": "entries",
+												"entries": [
+													"In a hill giant's world, humanoids and animals are easy prey that can be hunted with impunity. Creatures such as dragons and other giants are tough adversaries. Hill giants equate size with power.",
+													"Hill giants don't realize they follow an ordning. They know only that other giants are larger and stronger than they are, which means they are to be obeyed. A hill giant tribe's chief is usually the tallest and fattest giant that can still move about. Only on rare occasion does a hill giant with more brains than bulk use its cunning to gain the favor of giants of higher status, cleverly subverting the social order."
+												]
+											},
+											{
+												"name": "Voracious Eaters",
+												"type": "entries",
+												"entries": [
+													"With nothing else to occupy them, hill giants eat as often as possible. A hill giant hunts and forages alone or with a dire wolf companion, so as to not have to share with other tribe members. The giant eats anything that isn't obviously deadly, such as creatures known to be poisonous. Rotten meat is fair game, though, as are decaying plants and even mud.",
+													"Farmers fear and loathe hill giants. Where a predator such as an ankheg might burrow through fields and consume a cow or two before being driven off, a hill giant will consume a whole herd of cattle before moving on to sheep, goats, and chickens, then tearing into fruits, vegetables, and grain. If a farm family is at hand, the giant might snack on them too."
+												]
+											},
+											{
+												"name": "Stupid and Deadly",
+												"type": "entries",
+												"entries": [
+													"The hill giants' ability to digest nearly anything has allowed them to survive for eons as savages, eating and breeding in the hills like animals.They have never needed to adapt and change, so their minds and emotions remain simple and undeveloped.",
+													"With no culture of their own, hill giants ape the traditions of creatures they manage to observe for a time before eating them. They don't think about their own size and strength, however. Tribes of hill giants attempting to imitate elves have been known to topple entire forests by trying to live in trees. Others attempting to take over humanoid towns or villages get only as far as the doors and windows of a building, taking out its walls and roof as they attempt to enter.",
+													"In conversation, hill giants are blunt and direct, and they have little concept of deception. A hill giant might be fooled into running from another giant if a number of villagers cover themselves in blankets and stand on one another's shoulders holding a giant-painted pumpkinhead. Reasoning with a hill giant is futile, although clever creatures can sometimes encourage a giant to",
+													"take actions that benefit them."
+												]
+											},
+											{
+												"name": "Raging Bullies",
+												"type": "entries",
+												"entries": [
+													"A hill giant that feels as though it has been deceived, insulted, or made into a fool vents its terrible wrath on anything it encounters. Even after smashing those who offended it into pulp, the giant rampages until its rage abates, it notices something more interesting, or it grows hungry.",
+													"If a hill giant proclaims itself king over a territory where other humanoids live, it rules strictly by terror and tyranny. Its decisions shift with its mood, and if it forgets the title it bestowed upon itself, it might eat its subjects on a whim."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Giants",
+										"entries": [
+											"Ancient empires once cast long shadows over a world that quaked beneath the giants' feet. In those lost days, these towering figures were dragon slayers, dreamers, crafters, and kings, but their kind fell from glory long ago. However, even divided among secluded clans scattered throughout the world, the giants maintain the customs and traditions of old.",
+											{
+												"name": "Old as Legend",
+												"type": "entries",
+												"entries": [
+													"In remote regions of the world, the last remaining plinths, monoliths, and statues of the great giant empires bow their heads in desolate obscurity.Where once those empires sprawled across all lands, now the giants dwell in isolated tribes and clans.",
+													"Giants are almost as old as dragons, which were still young when the giants' heavy feet first shook the foundations of the world. As they spread across new lands, giants and dragons fought bitter generational wars that nearly brought both sides low. No living giant remembers what started the conflict, but myths and tales of their race's glorious dawn are still sung in their steadings and holdfasts, vilifying the primeval wyrms.Giants and dragons continue to harbor grudges against one another, and it is seldom that they will meet or occupy the same area without a fight."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The Ordning",
+										"entries": [
+											"Each of the main giant races-the cloud, fire, frost, hill, stone, and storm giants-are related by common elements of history, religion, and culture. They view one another as kindred, keeping any inherent animosity over territory and ambition to a minimum.",
+											"Giants belong to a caste structure called the ordning. Based on social class and highly organized, the ordning assigns a social rank to each giant. By understanding its place in the ordning, a giant knows which other giants are inferior or superior to it, since no two giants are equal. Each of the giant races analyzes a different combination of skills or qualities to determine the ordning. Giants make excelling in these qualities the purpose of their lives.",
+											"At the highest level of the ordning, the races of the giants are also ranked according to status. Storm giants are the highest in the ordning, followed by cloud giants, fire giants, frost giants, stone giants, hill giants, and finally giant kin such as fomorians, ettins, and ogres.",
+											"Regardless of a giant's rank among its own race, the chief of a hill giant tribe is inferior to the most common of stone giants. The lowest ranked giant of any type is superior to the highest ranked giant of an inferior type. It isn't considered evil to disrespect or even betray a giant of another type, merely rude."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Giant Gods",
+										"entries": [
+											"When the giants' ancient empires fell, Annam, father of all giants, forsook his children and the world. He swore never to look upon either again until the giants had returned to their glory and reclaimed their birthright as rulers of the world. As a result, giants pray not to Annam but to his divine children, along with a host of hero-deities and godly villains that make up the giants' pantheon.",
+											"Chief among these gods are the children of Annam, whose sons represent each type of giant: Stronmaus for storm giants, Memnor for cloud giants, Skoraeus Stonebones for stone giants, Thrym for frost giants, Surtur for fire giants, and Grolantor for hill giants. Not all giants automatically revere their kind's primary deity, however. Many good cloud giants refuse to worship the deceitful Memnor, and a storm giant dwelling in the icy mountains of the north might pay more homage to Thrym than Stronmaus. Other giants feel a stronger connection to Annam's daughters, who include Hiatea, the huntress and home warden; Iallanis, goddess of love and peace; and Diancastra, an impetuous and arrogant trickster.",
+											"Some giants abandon their own gods and fall prey to demon cults, paying homage to Baphomet or Kostchtchie. To worship them or any other non-giant deity is a great sin against the ordning, and almost certain to make a giant an outcast."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/SKT/Chief Guh.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/SKT/Chief Guh.png?v=1.103.2",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"GO"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		}
+	]
+}
